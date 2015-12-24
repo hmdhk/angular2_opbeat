@@ -1,0 +1,40 @@
+{
+  "name": "angular2_opbeat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hamidreza Jahtalab <h.jahtalab@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "es6-module-loader": "^0.17.9",
+    "gulp": "^3.9.0",
+    "gulp-jasmine": "^2.2.1",
+    "gulp-typescript": "^2.10.0",
+    "jasmine-core": "2.4.1",
+    "jasmine-node": "^1.14.5",
+    "karma": "^0.13.15",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.2",
+    "karma-systemjs": "^0.10.0",
+    "phantomjs": "^1.9.19",
+    "phantomjs-polyfill": "0.0.1",
+    "run-sequence": "^1.1.5",
+    "systemjs": "^0.19.9"
+  },
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.46",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.13",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.0",
+    "zone.js": "^0.5.10"
+  }
+}
