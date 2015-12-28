@@ -17,7 +17,11 @@ module.exports = function (config) {
         files: [
             // 'dist/**/*.js',
             { pattern: 'dist/test/*.js', included: true, watched: false },
-            { pattern: 'node_modules/angular2/**/*.js', included: false, watched: false }
+            { pattern: 'node_modules/angular2/**/*.js', included: false, watched: false },
+        // zone-microtask must be included first as it contains a Promise monkey patch
+            'node_modules/zone.js/dist/zone-microtask.js',
+            'node_modules/zone.js/dist/long-stack-trace-zone.js',
+            'node_modules/zone.js/dist/jasmine-patch.js',
             //  'node_modules/angular2/bundles/angular2.js'
             // 'node_modules/systemjs/dist/system.src.js'
         ],
@@ -78,7 +82,7 @@ module.exports = function (config) {
 
         systemjs: {
             configFile: 'system.conf.js',
-            // includeFiles: ['node_modules/angular2/bundles/angular2.js'],
+            // includeFiles: ['node_modules/zone.js/dist/zone.js'],
             serveFiles: [
                 'dist/**/*.js',
                 'node_modules/**/*.*'

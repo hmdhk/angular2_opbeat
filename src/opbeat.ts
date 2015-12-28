@@ -8,4 +8,8 @@ export class Opbeat {
         _opbeat('captureException', exception, cause);
         // Opbeat.captureException(exception, cause)
     }
+
+    public enqueueTransaction(transaction) {
+        _opbeat('captureTransaction', transaction);
+    }
 }
